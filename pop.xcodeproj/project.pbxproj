@@ -290,7 +290,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		04C0670F1B8D577C00ED0525 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Framework.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		04C0670F1B8D577C00ED0525 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
 		0648E9DF7DFD7360DDB00E86 /* libPods-Tests-pop-tests-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-pop-tests-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0755AE4F1BEA15950094AB41 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0755AE531BEA15950094AB41 /* pop-tvos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "pop-tvos-Info.plist"; path = "pop-tvos-framework/pop-tvos-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -400,8 +400,8 @@
 		ECC1DB1718CA291B008C7DEA /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
 		ECC1DB1818CA291B008C7DEA /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		ECC1DB1A18CA291B008C7DEA /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
-		ECC1DB1D18CA291B008C7DEA /* ApplicationTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ApplicationTests.xcconfig; path = ApplicationTests.xcconfig; sourceTree = "<group>"; };
-		ECC1DB1E18CA291B008C7DEA /* LogicTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = LogicTests.xcconfig; path = LogicTests.xcconfig; sourceTree = "<group>"; };
+		ECC1DB1D18CA291B008C7DEA /* ApplicationTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ApplicationTests.xcconfig; sourceTree = "<group>"; };
+		ECC1DB1E18CA291B008C7DEA /* LogicTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = LogicTests.xcconfig; sourceTree = "<group>"; };
 		ECC5A887162FBD6200F7F15C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		ECC5A89D162FBD9B00F7F15C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		ECCBC57117D96DBD00C69976 /* FloatConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = WebCore/FloatConversion.h; sourceTree = "<group>"; };
@@ -757,7 +757,6 @@
 				ECC1DB1718CA291B008C7DEA /* Project-Release.xcconfig */,
 				ECC1DB1818CA291B008C7DEA /* Project.xcconfig */,
 			);
-			name = Project;
 			path = Project;
 			sourceTree = "<group>";
 		};
@@ -769,7 +768,6 @@
 				ECC1DB1D18CA291B008C7DEA /* ApplicationTests.xcconfig */,
 				ECC1DB1E18CA291B008C7DEA /* LogicTests.xcconfig */,
 			);
-			name = Product;
 			path = Product;
 			sourceTree = "<group>";
 		};
@@ -1622,6 +1620,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(SRCROOT)/pop/module.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.pop;
 				PRODUCT_NAME = pop;
 				SDKROOT = iphoneos;
@@ -1639,6 +1638,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(SRCROOT)/pop/module.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.pop;
 				PRODUCT_NAME = pop;
 				SDKROOT = iphoneos;
@@ -1656,6 +1656,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(SRCROOT)/pop/module.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.pop;
 				PRODUCT_NAME = pop;
 				SDKROOT = iphoneos;
